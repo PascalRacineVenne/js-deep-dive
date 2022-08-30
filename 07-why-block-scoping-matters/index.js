@@ -20,6 +20,7 @@ let isSale = true;
 if (isSale) {
   // discount price of product
   let price = 20 - 2;
+  // const price = 20 - 2;
   // do something
   console.log('sale price', price);
 }
