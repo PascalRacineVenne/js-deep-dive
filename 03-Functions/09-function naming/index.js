@@ -16,4 +16,4 @@ const deleteTodo = () => {};
 const removeTodo = () => {};
 
 const getTodo = () => {};
-const fetchTodo = () => {}; // same thing problem... be consistant
+const fetchTodo = () => {}; // same thing problem... be consistant. Choose one or the other.
