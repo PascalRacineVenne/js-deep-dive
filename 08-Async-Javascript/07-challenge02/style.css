@@ -1,0 +1,26 @@
+.container {
+  background-image: url('./fashion.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.title {
+  margin: 12px 64px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4.5rem;
+  -webkit-text-stroke: 2px #fdfdfa;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  margin: 0;
+  font-size: 4rem;
+  color: #fdfdfa;
+}
