@@ -1,9 +1,8 @@
 export default function Story(story) {
-  console.log(story);
   return `
     <div className="story">
       <div className="">
-        <span class="gray">${story.index}</span>
+        <span class="gray">${story.index || ''}</span>
         <span class="upvote">▲</span>
         <a href="${story.url}">${story.title}</a>
         <span ">${story.domain}</span>
