@@ -28,7 +28,7 @@ export default function Story(story) {
         <a href="#/item?id=${id}">${comments_count} comments</a>
         |           
         <span class="favorite" data-story='${JSON.stringify(story)}'>
-          <img class='heart' src="">
+        <img class='heart' src="./images/heart_full.png" alt="heart" />
           ${isFavorite ? 'Remove From Favorites' : 'Add To Favorites'}
         </span>
       </div> 
