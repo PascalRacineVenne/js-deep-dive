@@ -1,20 +1,35 @@
+// import heart from '../images/heart.png';
+
 export default function Story(story) {
+  const {
+    index,
+    url,
+    title,
+    domain,
+    points,
+    user,
+    time_ago,
+    id,
+    comments_count,
+    isFavorite,
+  } = story;
+
   return `
     <div class="story">
       <div class="">
-        <span class="gray">${story.index || ''}</span>
+        <span class="gray">${index || ''}</span>
         <span class="upvote">▲</span>
-        <a href="${story.url}">${story.title}</a>
-        <span ">${story.domain}</span>
+        <a href="${url}">${title}</a>
+        <span ">${domain}</span>
         </div>
         <div class="gray">
-        ${story.points} points by ${story.user} ${story.time_ago}
+        ${points} points by ${user} ${time_ago}
         |
-        <a href="#/item?id=${story.id}">${story.comments_count} comments</a>
+        <a href="#/item?id=${id}">${comments_count} comments</a>
         |           
-        <span class="favorite">
-          <img class='heart' src="../images/heart.png">
-          Add to Favorites
+        <span class="favorite" data-story='${JSON.stringify(story)}'>
+          <img class='heart' src="">
+          ${isFavorite ? 'Remove From Favorites' : 'Add To Favorites'}
         </span>
       </div> 
     </div>
